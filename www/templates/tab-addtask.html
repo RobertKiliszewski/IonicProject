@@ -1,0 +1,21 @@
+<!-- The Add Task Tab -->
+<ion-view view-title="Add task">
+  <ion-content>
+      
+    <!-- This Allows the User to Input Text In Order to add a Task -->
+    <div class="list">
+        
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">What Task Would You Like To Add :</span>
+        <input type="text" ng-model="data.newTask" placeholder="Enter Task Here">
+      </label>
+        
+    </div>
+      
+    <!-- This Button Adds The Task To The List -->
+    <button class="button button-full button-balanced" ng-click="addTask()">
+      Add
+    </button>
+      
+  </ion-content>
+</ion-view>

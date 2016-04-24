@@ -1,0 +1,18 @@
+<!-- All The Tasks that are added -->
+<ion-view view-title="Tasks">
+  <ion-content>
+    <ion-list>
+        
+      <ion-item ng-repeat="task in data.tasks" class="item-remove-animate item-icon-right">
+        <!-- Displays the Tasks with a Title and Date of creation -->
+        <h3>{{ task.title }}</h3>
+        <h6>{{ task.added | date: 'yyyy-MM-dd HH:mm' }}</h6>
+          
+        <!-- If the User wishes to remove the task he can swipe the task to the left and click the Remove task Button -->
+        <ion-option-button class="button button-assertive" ng-click="deleteTask(task)">
+           Remove Task 
+        </ion-option-button>
+          
+    </ion-list>
+  </ion-content>
+</ion-view>
